@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+
+:root{
+    --main-color: blue;
+    --black:#12121a;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+
+*{
+    font-family: 'Comfortaa', cursive;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border:none;
+    outline: none;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 12rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.10rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: gold;
+    border-radius: 10px;
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    background-color: #010102;
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:2rem 5%;
+    z-index: 1000;
+    border-bottom:var(--border);
+    top:0;
+    left:0;
+    right:0;
+    
+}
+
+.header .logo img{
+    height:6rem;
+}
+
+.header .navigbar a{
+    margin: 0 2rem;
+    font-size:1.8rem;
+    color:white;
+}
+
+.header .navigbar a:hover{
+    color:gold;
+    transition:1s;
+}
+
+.header .mesicones div{
+    color:white;
+    font-size:2.6rem;
+    margin-left:2.2rem;
+}
+
+.header .mesicones div:hover{
+    color:#ffd900;
+    transition:0.9s;
+}
+
+#menu-btn{
+    display:none;
+}
+
+/* .btnsignin{
+    background-color: rgb(69, 69, 69);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px; 
+    cursor: pointer; 
+} */
+
+@media (max-width:991px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navigbar{
+        top:100%;
+        right:0;
+        background: white;
+        position: absolute;
+        background: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navigbar a{
+        color: black;
+        padding: .5rem;
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .header .navigbar .active{
+        right: 0;
+    }
+}
+
+section{
+    background-color: #5b5b5b;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:10%;
+    border-radius: 20px;
+}
+
+section p{
+    color:white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.myfooter{
+    background:var(--black);
+    text-align: center;
+}
+
+.myfooter .iconesshare{
+    padding:1rem 0;
+}
+
+.myfooter .iconesshare a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.myfooter .iconesshare a:hover{
+    color:#ffd900;
+    transition:0.9s;
+}
+
+.myfooter .liens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.myfooter .liens a{
+    padding:.7rem 2rem;
+    border-radius: 20px;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+}
+
+.myfooter .liens a:hover{
+    background:#ffd900;
+    color:black;
+    transition: 0.9s;
+}
+
+.myfooter .infos{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.myfooter .infos span{
+    color:white;
+}
+
+/*
+Pour la page Contacter
+*/
+.sectContact{
+    background-color: #f3f3f3;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:10%;
+    border-radius: 20px;
+}
+
+.box {
+    position: relative;
+    width: 385px;
+    height: 430px;
+    background: #f2f2f200;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 53px;
+
+}
+
+.box {
+    margin-top: 0;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #939393;
+    font-weight: 500;
+}
+
+.box .input-box .content {
+    position: relative;
+}
+
+.box .content span {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    color: #000;
+    font-size: 19px;
+}
+
+.box .content i {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    left:320px;
+    color: #ffda00;
+    font-size: 22px;
+}
+
+.box .input-box input {
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 10px 100;
+    color: #00589b;
+    box-sizing: border-box;
+    font: 20px;
+}
+
+
+.box .mid {
+    color: #000;
+    font-size: 18px;
+}
+
+.box .mid button {
+    display: block;
+    width: 85%;
+    background: gold;
+    padding: 14px;
+    border: none;
+    margin: 20px;
+    border-radius:60px;
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 23px;
+    cursor: pointer;
+    color: black;
+}
