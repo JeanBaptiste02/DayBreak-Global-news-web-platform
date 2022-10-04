@@ -70,11 +70,6 @@ Ut maximus lacus id porta vulputate. Sed lectus eros, tempus id malesuada et, rh
         <script src="js/script.js">
 
         </script>
-
-
-
-
-
         
             <footer class="myfooter">
 
