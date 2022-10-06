@@ -1,5 +1,7 @@
 ![Logo](https://cdn.discordapp.com/attachments/1017528617913307198/1023005580069183528/unknown.png)
 
+![Logo]<img src="[https://fullpath/assets/yourgif.gif](https://cdn.discordapp.com/attachments/1017528617913307198/1023005580069183528/unknown.png)" width="550" height="400">
+
 
 # DayBreaks
 
@@ -42,4 +44,4 @@ DayBreaks ##### www.TOTO.com
 Nous avons utilisé un plateforme gratuit pour l'hébergement de notre site web : [AlwaysData ](https://www.alwaysdata.com/fr/)
 
 
-![Logo](https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_CY_Cergy_Paris_Universit%C3%A9.svg/1280px-Logo_CY_Cergy_Paris_Universit%C3%A9.svg.png)
+![CY Cergy Paris Université](https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_CY_Cergy_Paris_Universit%C3%A9.svg/129px-Logo_CY_Cergy_Paris_Universit%C3%A9.svg.png)
