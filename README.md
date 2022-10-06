@@ -1,6 +1,4 @@
-![Logo](![![image](https://user-images.githubusercontent.com/91695685/194394504-f753e982-581c-4a0a-82fe-9096c6965201.png)
-)
-)
+![image](https://user-images.githubusercontent.com/91695685/194394729-5ab0010b-cb2d-4054-a1c9-2268d4efdd5f.png)
 
 
 
@@ -13,13 +11,6 @@ Le site a été concu dans le cadre d'un projet Université au sein de la 3éme 
 Vous pouvez accédé a l'actualité en suivant le lien ci-dessous:
  
 DayBreaks ##### www.TOTO.com 
-
-
-
-
-
-
-
 
 
 ## Language de Programmation
