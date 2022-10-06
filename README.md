@@ -1,6 +1,5 @@
+![Logo](https://cdn.discordapp.com/attachments/1017528617913307198/1023005580069183528/unknown.png)
 
-
-![Logo]<img src="[https://fullpath/assets/yourgif.gif](https://cdn.discordapp.com/attachments/1017528617913307198/1023005580069183528/unknown.png)" width="400" height="790">
 
 
 # DayBreaks
