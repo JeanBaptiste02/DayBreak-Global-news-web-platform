@@ -12,6 +12,7 @@ Notre projet porte sur la conception d'un site web basé sur les actualités à 
 ### URLs
  - https://damodaranejb.alwaysdata.net/
  - https://elumalaisri.alwaysdata.net/
+ - http://gmz.alwaysdata.net/
  - https://vzhang.alwaysdata.net/
 
 ## Mise en Ligne
