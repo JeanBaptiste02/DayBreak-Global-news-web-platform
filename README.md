@@ -10,7 +10,7 @@ Le site a été concu dans le cadre d'un projet Université au sein de la 3éme 
 
 Vous pouvez accéder a l'actualité en suivant le lien ci-dessous:
  
-DayBreaks ##### www.TOTO.com 
+DayBreaks http://dailybreaks.alwaysdata.net/
 
 
 ## Language de Programmation

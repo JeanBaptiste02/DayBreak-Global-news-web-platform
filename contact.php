@@ -6,29 +6,28 @@ require "./include/header.inc.php";
 
         <main>  
             <section class="sectContact">
+
+            <h2>Connectez-vous</h2>
+            <form class="contact_form" method="POST" action="login.php">
                 <div class="box">
-                    <h2 style=color:orange>Connectez-Vous</h2>
                     <div class="input-box">
                         <div class="content">
-                            <text>Mail</text>
                             <span></span>
-                            <input type="text">
+                            <input type="text" name="text" placeholder="Tapez votre mail">
                             <i class="fa fa-envelope"></i>
                         </div> 
                         <br></br>
                         <div class="content">
-                        <text>Password</text>
                             <span></span>
-                            <input type="password">
+                            <input type="password" name="password" placeholder="Tapez votre mot de passe">
                             <i class="fa fa-lock"></i>
                         </div> 
                     </div>
                     <div class="mid">
                         <br></br>
-                        <a href="">Forget Password?</a>
+                        <a href="#">Forget Password?</a>
                         <br></br>
-                        <button>Sign In</button>
-                        <input type="checkbox"> Keep me signed
+                        <button name="submit">Se connecter</button>
                     </div>
                     <br></br>
                 </div>

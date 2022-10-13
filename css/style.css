@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background-color: white;
+    background-color: #282727;
 }
 
 .header{
@@ -200,22 +200,13 @@ section p{
     color:white;
 }
 
+
 /*
 Pour la page Contacter
 */
 .sectContact{
-    background-color: white;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:15px;
-    padding-right:15px;
-    margin-top:10%;
-    margin-left:10%;
-    margin-right:10%;
-    margin-bottom:10%;
-    border-radius: 20px;
+    background-color: #282727;
 }
-
 .box {
     position: relative;
     width: 385px;
@@ -223,8 +214,15 @@ Pour la page Contacter
     background: #f2f2f200;
     margin: 70px auto;
     padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 3px 53px;
+    border-radius: 80px;
+    box-shadow: 0 3px 5px;
+    transition: 2s;
+
+}
+
+.box:hover {
+    box-shadow: 0 3px 20px;
+    transition: 2s;
 
 }
 
@@ -256,7 +254,6 @@ Pour la page Contacter
     color: #ffda00;
     font-size: 22px;
 }
-
 .box .input-box input {
     display: block;
     background: none;
@@ -264,11 +261,22 @@ Pour la page Contacter
     border-bottom: 1px solid #000;
     width: 100%;
     padding: 10px 100;
-    color: #00589b;
+    color: white;
     box-sizing: border-box;
     font: 20px;
+    padding-bottom: 15px;
 }
 
+.sectContact a{
+    color:aliceblue;
+}
+.sectContact h2{
+    color:gold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: "Times New Roman";
+}
 
 .box .mid {
     color: #000;
