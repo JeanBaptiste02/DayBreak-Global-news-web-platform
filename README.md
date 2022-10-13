@@ -22,7 +22,7 @@ DayBreaks http://dailybreaks.alwaysdata.net/
 
 ## API
 
-- Mediastack (à définir)
+- News API et Speech API
 
 
 ## Développeur
@@ -33,7 +33,7 @@ DayBreaks http://dailybreaks.alwaysdata.net/
 - [ZHANG Victor](https://github.com/Seed4616)
 
 ### Mise en Ligne
-Nous avons utilisé un plateforme gratuit pour l'hébergement de notre site web : [AlwaysData ](https://www.alwaysdata.com/fr/) (à définir)
+Nous avons utilisé un plateforme gratuit pour l'hébergement de notre site web : [AlwaysData ](https://www.alwaysdata.com/fr/) 
 
 
 ![CY Cergy Paris Université](https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_CY_Cergy_Paris_Universit%C3%A9.svg/129px-Logo_CY_Cergy_Paris_Universit%C3%A9.svg.png)
