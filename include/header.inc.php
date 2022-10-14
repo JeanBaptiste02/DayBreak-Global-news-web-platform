@@ -1,3 +1,7 @@
+<?php
+    include "./include/functions.inc.php"
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -26,19 +30,18 @@
             </a>
 
             <nav class="navigbar">
-                <a href="#">Home</a>
-                <a href="#">Sciences</a>
-                <a href="#">Technologie</a>
-                <a href="#">Politiques</a>
-                <a href="#">Economie</a>
-                <a href="#">Sports</a>
-                <a href="#">Educations</a>
-                <a href="#">Blogs</a>
+                <a href="index.php">Home</a>
+                <a href="sciences.php">Sciences</a>
+                <a href="technologies.php">Technologies</a>
+                <a href="sciences.php">Economie</a>
+                <a href="sports.php">Sports</a>
+                <a href="sante.php">Santé</a>
+                <a href="divertissement.php">Divertissement</a>
             </nav>
 
             <div class="mesicones">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fa fa-user" id="search-btn"></div>
+                <div class="fa fa-sign-in" id="search-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 
