@@ -38,7 +38,7 @@
 
             <div class="mesicones">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fa fa-sign-in" id="search-btn"></div>
+                <div class="fa fa-user" id="search-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 

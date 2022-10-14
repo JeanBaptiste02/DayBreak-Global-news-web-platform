@@ -13,13 +13,13 @@ require "./include/header.inc.php";
                     <div class="input-box">
                         <div class="content">
                             <span></span>
-                            <input type="text" name="text" placeholder="Tapez votre mail">
+                            <input type="text" name="email" placeholder="Tapez votre mail">
                             <i class="fa fa-envelope"></i>
                         </div> 
                         <br></br>
                         <div class="content">
                             <span></span>
-                            <input type="password" name="password" placeholder="Tapez votre mot de passe">
+                            <input type="password" name="pass" placeholder="Tapez votre mot de passe">
                             <i class="fa fa-lock"></i>
                         </div> 
                     </div>
