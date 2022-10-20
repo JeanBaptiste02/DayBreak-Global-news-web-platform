@@ -10,7 +10,7 @@ Le site a été concu dans le cadre d'un projet Université au sein de la 3éme 
 
 Vous pouvez accéder a l'actualité en suivant le lien ci-dessous:
  
-DayBreaks http://dailybreaks.alwaysdata.net/
+DayBreaks ##### www.TOTO.com 
 
 
 ## Language de Programmation
@@ -22,7 +22,7 @@ DayBreaks http://dailybreaks.alwaysdata.net/
 
 ## API
 
-- News API et Speech API
+- Mediastack (à définir)
 
 
 ## Développeur
@@ -33,7 +33,7 @@ DayBreaks http://dailybreaks.alwaysdata.net/
 - [ZHANG Victor](https://github.com/Seed4616)
 
 ### Mise en Ligne
-Nous avons utilisé un plateforme gratuit pour l'hébergement de notre site web : [AlwaysData ](https://www.alwaysdata.com/fr/) 
+Nous avons utilisé un plateforme gratuit pour l'hébergement de notre site web : [AlwaysData ](https://www.alwaysdata.com/fr/) (à définir)
 
 
 ![CY Cergy Paris Université](https://upload.wikimedia.org/wikipedia/fr/thumb/6/69/Logo_CY_Cergy_Paris_Universit%C3%A9.svg/129px-Logo_CY_Cergy_Paris_Universit%C3%A9.svg.png)

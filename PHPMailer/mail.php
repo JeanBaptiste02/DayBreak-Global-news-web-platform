@@ -5,10 +5,8 @@ require "./include/header.inc.php";
 ?>
 
 <?php
-
-    if (isset($_POST['pseudo'])&& isset($_POST['mail']) && isset($_POST["subject"]) && isset($_POST['message'])) {
-
-        $retour = mail('viknesh7802@gmail.com', $_POST["subject"],$_POST['message'],$_POST['mail']);
+    if (isset($_POST['message'])) {
+        $retour = mail('gunduz.maxime.ziya@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From:'.$_POST['email']. "\r\n" . 'Reply-to: ' . $_POST['email']);
         if($retour)
             echo '<p>Votre message a bien été envoyé.</p>';
     }

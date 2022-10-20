@@ -41,10 +41,16 @@ require "./include/header.inc.php";
         <section id="apropos_contactbutton">
             <div>
                 <h2>Avez-vous une autre question sur DayBreaks ?</h2>
-                <a href="contact.php">Contacter</a>
+                <!-- fORMULAIRE ENVOIE DE MAIL-->
+
+        <form method="post" action="mail.php">
+            <label>Tape ton message ici pour m'écrire</label>
+                <textarea rows="10" cols="30" name="message"></textarea>
+            <input type="submit">
+        </form>
+                 <a href="contact.php">Contacter</a>
             </div>
         </section>
-
 
 
         </main>

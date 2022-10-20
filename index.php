@@ -6,6 +6,7 @@ require "./include/header.inc.php";
 
         <main>
             <section>
+
             <div class="section-content blog">
 
                 <div class="title">
@@ -51,6 +52,8 @@ require "./include/header.inc.php";
             </section>
         </main>
 
+        <!-- lien du fichier js -->
+        <script src="js/script.js"></script>
 <?php
     require "./include/footer.inc.php";
 ?>

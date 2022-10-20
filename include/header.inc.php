@@ -1,3 +1,7 @@
+<?php
+    include "./include/functions.inc.php"
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -26,7 +30,7 @@
             </a>
 
             <nav class="navigbar">
-                <a href="index.php">Home</a>
+                <a href="#">Home</a>
                 <a href="#">Sciences</a>
                 <a href="#">Technologie</a>
                 <a href="#">Politiques</a>
@@ -38,9 +42,7 @@
 
             <div class="mesicones">
                 <div class="fas fa-search" id="search-btn"></div>
-                <a href="connect.php">
-                    <div class="fa fa-user" id="search-btn"></div>
-                </a>
+                <div class="fa fa-user" id="search-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 
