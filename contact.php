@@ -7,30 +7,40 @@ require "./include/header.inc.php";
         <main>  
             <section class="sectContact">
 
-            <h2>Connectez-vous</h2>
-            <form class="contact_form" method="POST" action="login.php">
-                <div class="box">
-                    <div class="input-box">
-                        <div class="content">
-                            <span></span>
-                            <input type="text" name="email" placeholder="Tapez votre mail">
-                            <i class="fa fa-envelope"></i>
-                        </div> 
-                        <br></br>
-                        <div class="content">
-                            <span></span>
-                            <input type="password" name="pass" placeholder="Tapez votre mot de passe">
-                            <i class="fa fa-lock"></i>
-                        </div> 
-                    </div>
-                    <div class="mid">
-                        <br></br>
-                        <a href="#">Forget Password?</a>
-                        <br></br>
-                        <button name="submit">Se connecter</button>
+            <h2>Contactez-nous</h2>
+            <form class="contact_form" method="post" action="mail.php">
+            <div class="box">
+                <div class="input-box">
+                    <div class="content">
+                        <label for="pseudo">Pseudo :</label>
+                        <input type="text" id="pseudo" name="pseudo" required>
                     </div>
                     <br></br>
-                </div>
+                    <div class="content">
+                        <label for="mail">Mail :</label>
+                        <input type="mail" id="mail" name="mail" required>
+                    </div>
+                    <br></br>
+                    <div class="content">
+                        <label><p>Sujet</p></label>
+                        <input type="mail" id="mail" name="mail" required>
+                    </div>
+                    <br></br>
+                    <div class="content">
+                        <label><p>Vous pouvez vous envoyé un message ici !</p></label>
+                        <textarea rows="10" cols="30" name="message" required></textarea>
+                    </div>
+
+                    <div class="mid">
+                        <br></br>
+                        <button name="submit">Envoyer</button>
+                    </div>
+            </div>
+            
+            </form>
+
+        </div>
+    </div>
             </section>
         </main>
 
