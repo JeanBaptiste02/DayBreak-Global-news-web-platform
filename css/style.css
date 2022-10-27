@@ -56,6 +56,14 @@ body{
     
 }
 
+h2{
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:30px;
+    font-size:25px;
+    color:gold;
+}
+
 .header .logo img{
     height:6rem;
 }

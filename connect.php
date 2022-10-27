@@ -27,9 +27,11 @@ require "./include/header.inc.php";
                     </div>
                     <div class="mid">
                         <br></br>
-                        <a href="#">Forget Password?</a>
+                        <a href="#" style="color:cyan">Forget Password?</a>
                         <br></br>
                         <button name="submit">Se connecter</button>
+                        <br></br>
+                        <a href="#" style="color:cyan">Pas de compte? Inscrivez-vous</a>
                     </div>
                     <br></br>
                 </div>

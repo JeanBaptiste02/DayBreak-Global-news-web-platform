@@ -36,6 +36,8 @@
                 <a href="politics.php">Politiques</a>
                 <a href="economy.php">Economie</a>
                 <a href="meteo.php">Météo</a>
+                <a href="divertissement.php">Divertissement</a>
+
             </nav>
 
             <div class="mesicones">
