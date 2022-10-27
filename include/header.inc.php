@@ -25,24 +25,22 @@
     <body>
 
         <header class="header">
-            <a href="#" class = "logo">
+            <a href="index.php" class = "logo">
                 <img src="images/logo3.png" alt="">
             </a>
 
             <nav class="navigbar">
-                <a href="#">Home</a>
-                <a href="#">Sciences</a>
-                <a href="#">Technologie</a>
-                <a href="#">Politiques</a>
-                <a href="#">Economie</a>
-                <a href="#">Sports</a>
-                <a href="#">Educations</a>
-                <a href="#">Blogs</a>
+                <a href="index.php">Home</a>
+                <a href="sciences.php">Sciences</a>
+                <a href="techno.php">Technologie</a>
+                <a href="politics.php">Politiques</a>
+                <a href="economy.php">Economie</a>
+                <a href="meteo.php">Météo</a>
             </nav>
 
             <div class="mesicones">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fa fa-user" id="search-btn"></div>
+                <a href="connect.php"><div class="fa fa-user" id="search-btn"></div></a>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 

@@ -1,3 +1,5 @@
+sesssion_start();
+
 <?php
 $titre = "DailyBreaks";
 $link = "./css/style.css";
@@ -8,7 +10,7 @@ require "./include/header.inc.php";
             <section class="sectContact">
 
             <h2>Connectez-vous</h2>
-            <form class="contact_form" method="POST" action="login.php">
+            <form class="contact_form" method="POST" action="bd_connect.php">
                 <div class="box">
                     <div class="input-box">
                         <div class="content">

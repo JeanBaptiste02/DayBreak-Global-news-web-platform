@@ -27,7 +27,7 @@ require "./include/header.inc.php";
                     </div>
                     <br></br>
                     <div class="content">
-                        <label><p>Vous pouvez vous envoyé un message ici !</p></label>
+                        <label><p>Vous pouvez nous écrire un message ici !</p></label>
                         <textarea rows="10" cols="30" name="message" required></textarea>
                     </div>
 

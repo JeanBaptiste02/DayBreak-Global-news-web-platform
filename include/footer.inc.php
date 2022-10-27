@@ -1,3 +1,6 @@
+<!-- lien du fichier js -->
+<script src="js/script.js"></script>
+
 <footer class="myfooter">
 
                 <div class="iconesshare">
@@ -6,7 +9,7 @@
                 </div>
 
                 <div class="liens">
-                    <a href="#">home</a>
+                    <a href="index.php">home</a>
                     <a href="apropos.php">about</a>
                     <a href="contact.php">contact</a>
                 </div>

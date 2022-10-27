@@ -38,21 +38,6 @@ require "./include/header.inc.php";
                 </article>
             </div>
         </section>
-        <section id="apropos_contactbutton">
-            <div>
-                <h2>Avez-vous une autre question sur DayBreaks ?</h2>
-                <!-- fORMULAIRE ENVOIE DE MAIL-->
-
-        <form method="post" action="mail.php">
-            <label>Tape ton message ici pour m'écrire</label>
-                <textarea rows="10" cols="30" name="message"></textarea>
-            <input type="submit">
-        </form>
-                 <a href="contact.php">Contacter</a>
-            </div>
-        </section>
-
-
         </main>
 
         <!-- lien du fichier js -->

@@ -10,13 +10,13 @@ require "./include/header.inc.php";
             <div class="section-content blog">
 
                 <div class="title">
-                    <h2>Flash Infos</h2>
+                    <h2>Sciences</h2>
                 </div>
 
                 <div class="cards">
-                <?php
+                    <?php
                         $apiKey = "b1ee71d61f11515c4b6928283c0d787b";
-                        $url = "https://gnews.io/api/v4/top-headlines?topic=breaking-news&country=fr&token=$apiKey";
+                        $url = "https://gnews.io/api/v4/top-headlines?topic=sciences&country=fr&token=$apiKey";
                         $res = file_get_contents($url);
                         $newsData = json_decode($res, true);
                         foreach($newsData['articles'] as $news) {

@@ -14,9 +14,9 @@ require "./include/header.inc.php";
                 </div>
 
                 <div class="cards">
-                <?php
+                    <?php
                         $apiKey = "b1ee71d61f11515c4b6928283c0d787b";
-                        $url = "https://gnews.io/api/v4/top-headlines?topic=breaking-news&country=fr&token=$apiKey";
+                        $url = "https://gnews.io/api/v4/top-headlines?topic=economy&country=in&token=$apiKey";
                         $res = file_get_contents($url);
                         $newsData = json_decode($res, true);
                         foreach($newsData['articles'] as $news) {
