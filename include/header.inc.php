@@ -1,10 +1,13 @@
 <?php
-    include "./include/functions.inc.php"
+    require "./bd_connect.php";
+    require "./news.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
+        
         <link rel="shortcut icon" href="/images/sitelogo.png" />
         <meta charset="UTF-8">
         <meta name="author" content="Damodarane Jean-Baptiste" /> 
@@ -13,7 +16,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-        <tile><?php echo $titre;?></title>
+        <title><?php echo $titre;?></title>
 
         <!-- style lien cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -25,19 +28,19 @@
     <body>
 
         <header class="header">
+
             <a href="index.php" class = "logo">
                 <img src="images/logo3.png" alt="">
             </a>
 
             <nav class="navigbar">
-                <a href="index.php">Home</a>
-                <a href="sciences.php">Sciences</a>
-                <a href="techno.php">Technologie</a>
-                <a href="politics.php">Politiques</a>
-                <a href="economy.php">Economie</a>
-                <a href="meteo.php">Météo</a>
-                <a href="divertissement.php">Divertissement</a>
-
+                <a href="index.php" class="active">Home</a>
+                <a href="sciences.php" class="active">Sciences</a>
+                <a href="techno.php" class="active">Technologie</a>
+                <a href="sports.php" class="active">Sports</a>
+                <a href="politics.php" class="active">Politiques</a>
+                <a href="meteo.php" class="active">Météo</a>
+                <a href="divertissement.php" class="active">Divertissement</a>
             </nav>
 
             <div class="mesicones">

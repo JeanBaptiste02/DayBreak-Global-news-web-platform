@@ -1,16 +1,15 @@
 <?php
-    
-    define ("HOST","mysql-daybreak.alwaysdata.net");
-    define ("USER","daybreak");
-    define ("PASSWORD","c41ez56s1x@");
-    define ("DBNAME","daybreak_bd");
-
-    try{
-        $db = new PDO("mysql:host=" . HOST . ";dbname=" . DBNAME, USER, PASSWORD);
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connection reussi";
-    } catch(PDOException $e) {
-        echo $e;
+   
+    $servername = 'mysql-daybreak.alwaysdata.net';
+    $dbname = 'daybreak_bd';
+    $username = 'daybreak';
+    $password = 'c41ez56s1x@';
+   
+    try {
+        $db = new PDO ('mysql:host='.$servername.';dbname='.$dbname, $username, $password);
+    } catch (PDOExecepetion $e) {
+        echo "Erreur :" . $e->getMessage();
     }
+    echo 'Connexion réussie';
 
 ?>
