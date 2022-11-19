@@ -11,6 +11,7 @@ require "./include/header.inc.php";
 ?>
 
         <main>
+
             <section>
                 <h2>Citations du jour par Daybreaks</h2>
                 <div class="box">
@@ -29,10 +30,9 @@ require "./include/header.inc.php";
                     </div>
                 </div>
             </section>
+
         </main>
 
-        <!-- lien du fichier js -->
-        <script src="js/script.js"></script>
 <?php
     require "./include/footer.inc.php";
 ?>

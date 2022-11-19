@@ -4,14 +4,25 @@ $titre = "DailyBreaks";
 $link = "./css/style.css";
 require "./include/header.inc.php";
 ?>
-
+ 
 <main>  
             <section class="sectContact">
 
-            <h2>Inscrivez-vous</h2>
-            <form class="contact_form" method="POST">
+            <h2>Register now</h2>
+            <form class="contact_form" action="validatemail.php" method="post">
                 <div class="box">
                     <div class="input-box">
+
+                    <table>
+                        <tr>
+                        <td>
+                        <label>Enter the text in image</label>
+                        <input name="captcha" type="text">
+                        <img src="captcha.php" style="vertical-align: middle;"/>
+                        </td>
+                        </tr>
+                        <tr>
+                    </table>
                         <div class="content">
                             <span></span>
                             <input type="text" name="email" placeholder="Tapez votre mail">
@@ -24,10 +35,10 @@ require "./include/header.inc.php";
                             <i class="fa fa-lock"></i>
                         </div> 
                     </div>
+                    
                     <br></br>
                     <div class="mid">
-                        <br></br>
-                        <button name="submit">S'inscrire</button>
+                    <button name="submit" type="submit" value="submit">Register</button>
                     </div>
                     <br></br>
                 </div>
@@ -35,32 +46,5 @@ require "./include/header.inc.php";
         </main>
 
 <?php
-if(isset($_POST['submit'])){
-    extract($_POST);
-    if(!empty($pass) && !empty($email)){
-        $options = [
-            'cost' => 12,
-        ];
-
-        $hashpass=password_hash($pass, PASSWORD_BCRYPT, $options);
-
-        
-        global $db;
-
-        $sql = "INSERT INTO compte (mail, pwd_hash) VALUES (:email, :pass)";
-        $req = $db->prepare($sql);
-        $req->execute([
-            'email'=>$email,
-            'pass'=>$hashpass
-        ]);
-        echo "Enregistrement reussi";
-        
-    }
-}
-
-?>
-
-
-<?php
-        require "./include/footer.inc.php";
+    require "./include/footer.inc.php";
 ?>

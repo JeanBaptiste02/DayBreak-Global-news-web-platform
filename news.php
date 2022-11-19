@@ -2,11 +2,22 @@
     include "./include/functions.inc.php";
     require "./bd_connect.php";
 
-    $callAPI = read('logs.txt');
+    $hour = date('H:i');
+    if($hour >= date('00:00') && $hour <= date('12:00')) {
+        $file = 'logsMatin.txt';
+    }
+    if($hour > date('12:00') && $hour <= date('20:00')) {
+        $file = 'logsMidi.txt';
+    }
+    if($hour > date('20:00') && $hour <= date('23:59')) {
+        $file = 'logsSoir.txt';
+    }
+
+    $callAPI = read($file);
 
     if($callAPI == FALSE) {
 
-        $apiKey = "pub_12334ca5e8865d87fedcd768eaf3e30b7dc96";
+        $apiKey = "pub_129069d0616e4d1bfcf9e4219faffb0f4456f";
                    
         $categories = ['top', 'politics', 'science', 'sports', 'technology'];
     
@@ -21,7 +32,7 @@
                 $hour = "[".date("H").":".date("i").":".date("s")."]";
                 $lien = $url;
                 $data = $day.$hour.$lien. "\n";
-                write($data);
+                write($data, $file);
     
                 //on parcours lurl
                 $res = file_get_contents($url); 
@@ -34,7 +45,7 @@
                     $description = $news['description'];
                     $contenu = $news['content'];
                     $date = $news['pubDate'];
-                    $urlPicture = $news['image_url'];
+                    $urlPicture = urldecode($news['image_url']);
                     $source = $news['link'];
                     $sourceName = $news['source_id'];
     
@@ -65,4 +76,11 @@
                 }
             }
         }
+    
     }
+
+    $date = date("Y-m-d", strtotime('-3 day'));
+    $statement = $db->prepare("DELETE FROM news WHERE date < '$date' ");
+    $statement->execute();
+ 
+?>

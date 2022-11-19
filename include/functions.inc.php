@@ -1,8 +1,8 @@
 <?php
 
-    function write($strData) {
+    function write(string $strData, string $file) {
 
-        $handle = fopen("logs.txt", "a+");
+        $handle = fopen($file, "a+");
         fputs($handle, $strData);
         fclose($handle);
 

@@ -9,6 +9,7 @@
     <head>
         
         <link rel="shortcut icon" href="/images/sitelogo.png" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
         <meta charset="UTF-8">
         <meta name="author" content="Damodarane Jean-Baptiste" /> 
         <meta name="date" content="2022-09-23" />
@@ -47,6 +48,11 @@
                 <div class="fas fa-search" id="search-btn"></div>
                 <a href="connect.php"><div class="fa fa-user" id="search-btn"></div></a>
                 <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
             </div>
 
         </header>

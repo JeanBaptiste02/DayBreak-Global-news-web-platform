@@ -4,8 +4,8 @@
 <footer class="myfooter">
 
                 <div class="iconesshare">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100087659242240" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/daybreaks_company/" class="fab fa-instagram"></a>
                 </div>
 
                 <div class="liens">

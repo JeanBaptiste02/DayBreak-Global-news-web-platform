@@ -9,13 +9,13 @@
             <section>
                 <div class="section-content blog">
                     <div class="title">
-                        <h2>Sciences</h2>
+                        <h2>Sports</h2>
                     </div>
                     <div class="cards">
                         <?php
                             /*PAGINATION */
                             $newsParPage = 9; //nbr de news par page
-                            $newsTotalesReq = $db->query('SELECT id FROM news WHERE categorie = "science" '); 
+                            $newsTotalesReq = $db->query('SELECT id FROM news WHERE categorie = "sports" '); 
                             $newsTotales = $newsTotalesReq->rowCount(); //nbr totale de news
                             $pageTotales = ceil($newsTotales/$newsParPage);
 
@@ -29,7 +29,7 @@
                             $depart = ($pageCourante-1) * $newsParPage;
 
                             /*ON RECUPERE LES DONNEES DANS LA BD*/
-                            $result = $db->query("SELECT * FROM news WHERE categorie = 'science' ORDER BY date DESC LIMIT $depart,$newsParPage");
+                            $result = $db->query("SELECT * FROM news WHERE categorie = 'sports' ORDER BY date DESC LIMIT $depart,$newsParPage");
                             while ($news = $result->fetch()) {
                                 echo "<div class='card'> \n";
                                     echo "<div class='image-section'> \n";
@@ -62,6 +62,7 @@
                     </div>  
                 </div>
 
+               
                 <div class="pagination">
                     <?php
                         /*LES LIENS PERMETTANT DE PARCOURIR LES PAGES*/
@@ -71,21 +72,21 @@
                             //--------------------------------------------------- a gauche de la page courante
                             if($pageCourante > 1) {
                                 $precedent = $pageCourante - 1;
-                                echo '<a href="sciences.php?page='.$precedent.'">Précédent</a> ';
+                                echo '<a href="sports.php?page='.$precedent.'">Précédent</a> ';
                             }
 
                             if($pageCourante == 3) {
-                                echo '<a href="sciences.php?page=1">1</a> '; 
+                                echo '<a href="sports.php?page=1">1</a> '; 
                             }
 
                             if($pageCourante > 3) {
-                                echo '<a href="sciences.php?page=1">1</a> '; 
-                                echo '<span class="petitPoint">...</span> '; 
+                                echo '<a href="sports.php?page=1">1</a> '; 
+                                echo '<span class="petitPoint">...</span> ';  
                             }
 
                             for($i = $pageCourante - $nbrMaxGD; $i <$pageCourante; $i++) {
                                 if($i > 0) {
-                                    echo '<a href="sciences.php?page='.$i.'">'.$i.'</a> '; 
+                                    echo '<a href="sports.php?page='.$i.'">'.$i.'</a> '; 
                                 }
                             }
 
@@ -94,22 +95,22 @@
                             // -------------------------------------------------- a droite de la page courante
                             for($i = $pageCourante + 1; $i <=$pageTotales; $i++) {
                                 if($i < $pageCourante + $nbrMaxGD + 1) {
-                                    echo '<a href="sciences.php?page='.$i.'">'.$i.'</a> '; 
+                                    echo '<a href="sports.php?page='.$i.'">'.$i.'</a> '; 
                                 }   
                             }
 
                             if($pageCourante < $pageTotales - 2) {
-                                echo '<span class="petitPoint">...</span> '; 
-                                echo '<a href="sciences.php?page='.$pageTotales.'">'.$pageTotales.'</a> '; 
+                                echo '<span class="petitPoint">...</span> ';
+                                echo '<a href="sports.php?page='.$pageTotales.'">'.$pageTotales.'</a> '; 
                             }
 
                             if($pageCourante == $pageTotales - 2) {
-                                echo '<a href="sciences.php?page='.$pageTotales.'">'.$pageTotales.'</a> ';
+                                echo '<a href="sports.php?page='.$pageTotales.'">'.$pageTotales.'</a> ';
                             }
                             
                             if($pageCourante != $pageTotales) {
                                 $suivant = $pageCourante + 1;
-                                echo '<a href="sciences.php?page='.$suivant.'">Suivant</a> '; 
+                                echo '<a href="sports.php?page='.$suivant.'">Suivant</a> '; 
                             }
                         }
                     ?>
@@ -118,7 +119,7 @@
             </section>
 
         </main>
-
+        
 <?php
     require "./include/footer.inc.php";
 ?>
