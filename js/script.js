@@ -1,3 +1,4 @@
+//pour la barre de recherche
 let navbar = document.querySelector('.navigbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -12,6 +13,7 @@ document.querySelector('#search-btn').onclick = () =>{
     cartItem.classList.remove('active');
 }
 
+//pour la carte
 let mapOptions = {
     center:[49.04295, 2.08466],
     zoom:10
@@ -24,4 +26,3 @@ map.addLayer(layer);
 
 let marker = new L.Marker([49.04295, 2.08466]);
 marker.addTo(map);
-

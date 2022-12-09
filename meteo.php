@@ -1,5 +1,5 @@
 <?php
-$titre = "DailyBreaks";
+$titre = "DayBreaks";
 $link = "./css/style.css";
 require "./include/header.inc.php";
 ?>

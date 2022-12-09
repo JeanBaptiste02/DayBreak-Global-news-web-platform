@@ -1,5 +1,5 @@
 <?php
-$titre = "DailyBreaks";
+$titre = "DayBreaks";
 $link = "./css/style.css";
 require "./include/header.inc.php";
 ?>
@@ -41,16 +41,33 @@ require "./include/header.inc.php";
             <article style="margin: 1rem 0; width: 100%;">
                 <h3>Où nous-nous situons ?</h3>
                 <div>
-                    <div id="map"></div>
+                    <div id="map">
+
+
+                        <script>
+
+let mapOptions = {
+    center:[49.04295, 2.08466],
+    zoom:10
+}
+
+let map = new L.map('map', mapOptions);
+
+let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer);
+
+let marker = new L.Marker([49.04295, 2.08466]);
+marker.addTo(map);
+
+                        </script>
+
+                    </div>
                 </div>
                 <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
             </article>
 
         </section>
     </main>
-
-    <script src="./js/scripts.js"></script>
-
 
 <?php
         require "./include/footer.inc.php";
