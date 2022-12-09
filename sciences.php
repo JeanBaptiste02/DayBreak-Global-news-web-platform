@@ -13,9 +13,10 @@
                     </div>
                     <div class="cards">
                         <?php
+                            $date = date("Y-m-d", strtotime('-3 day'));
                             /*PAGINATION */
                             $newsParPage = 9; //nbr de news par page
-                            $newsTotalesReq = $db->query('SELECT id FROM news WHERE categorie = "science" '); 
+                            $newsTotalesReq = $db->query("SELECT id FROM news WHERE date >= '$date' AND categorie = 'science' "); 
                             $newsTotales = $newsTotalesReq->rowCount(); //nbr totale de news
                             $pageTotales = ceil($newsTotales/$newsParPage);
 
@@ -29,7 +30,7 @@
                             $depart = ($pageCourante-1) * $newsParPage;
 
                             /*ON RECUPERE LES DONNEES DANS LA BD*/
-                            $result = $db->query("SELECT * FROM news WHERE categorie = 'science' ORDER BY date DESC LIMIT $depart,$newsParPage");
+                            $result = $db->query("SELECT * FROM news WHERE date >= '$date' AND  categorie = 'science' ORDER BY date DESC LIMIT $depart,$newsParPage");
                             while ($news = $result->fetch()) {
                                 echo "<div class='card'> \n";
                                     echo "<div class='image-section'> \n";

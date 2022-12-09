@@ -13,9 +13,10 @@
                     </div>
                     <div class="cards">
                         <?php
+                            $date = date("Y-m-d", strtotime('-3 day'));
                             /*PAGINATION */
                             $newsParPage = 9; //nbr de news par page
-                            $newsTotalesReq = $db->query('SELECT id FROM news WHERE categorie = "top" '); 
+                            $newsTotalesReq = $db->query("SELECT id FROM news WHERE categorie = 'top' AND date >= '$date'"); 
                             $newsTotales = $newsTotalesReq->rowCount(); //nbr totale de news
                             $pageTotales = ceil($newsTotales/$newsParPage);
 
@@ -29,12 +30,13 @@
                             $depart = ($pageCourante-1) * $newsParPage;
 
                             /*ON RECUPERE LES DONNEES DANS LA BD*/
-                            $result = $db->query("SELECT * FROM news WHERE categorie = 'top' ORDER BY date DESC LIMIT $depart,$newsParPage");
+                            $result = $db->query("SELECT * FROM news WHERE date >= '$date' AND categorie = 'top' ORDER BY date DESC LIMIT $depart,$newsParPage");
                             while ($news = $result->fetch()) {
                                 echo "<div class='card'> \n";
                                     echo "<div class='image-section'> \n";
                                         $urlPicture = urldecode($news['imageUrl']);
-                                        echo "<img src='$urlPicture' alt='image de la news' width='100' height='200'/> \n";
+                                        $urlPicture = str_replace(' ', '%20', $urlPicture);
+                                        echo "<img src='$urlPicture' alt='image de la news' width='100' height='200'> \n";
                                     echo "</div> \n";
                                     echo "<div class='article'> \n";
                                         $titre = $news['titre'];
@@ -45,10 +47,18 @@
                                     echo "</div> \n";
                                     echo "<div class='blog-view'> \n";
                                         $id = $news['id'];
-                                        echo "<form id='test' action='newsdetail.php' method='post'> \n";
-                                            echo "<input type='hidden' name='idNews' value='$id'/> \n";
-                                            echo "<input type='submit' value='Lire plus' /> \n";
-                                        echo "</form> \n";
+                                        if(isset($_SESSION['email'])&&(!empty($_SESSION['email']))){
+                                            echo "<form action='newsdetail.php' method='post'> \n";
+                                                echo "<input type='hidden' name='idNews' value='$id'> \n";
+                                                echo "<input type='submit' value='Lire plus' > \n";
+                                            echo "</form> \n";
+                                        } else{
+                                            echo "<form action='connect.php' method='post'> \n";
+                                                echo "<input type='hidden' name='idNews' value='$id'> \n";
+                                                echo "<input type='submit' value='Lire plus' > \n";
+                                            echo "</form> \n";
+                                        }
+                                        
                                     echo "</div> \n";
                                     echo "<div class='posted-date'> \n";
                                         $date = $news['date'];

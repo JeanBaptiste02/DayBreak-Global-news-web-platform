@@ -1,6 +1,6 @@
 <?php
    
-    $servername = 'mysql-daybreak.alwaysdata.net';
+   $servername = 'mysql-daybreak.alwaysdata.net';
     $dbname = 'daybreak_bd';
     $username = 'daybreak';
     $password = 'c41ez56s1x@';
@@ -10,6 +10,6 @@
     } catch (PDOExecepetion $e) {
         echo "Erreur :" . $e->getMessage();
     }
-    echo 'Connexion réussie';
+
 
 ?>

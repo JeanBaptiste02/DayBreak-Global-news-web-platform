@@ -1,6 +1,5 @@
-<?php
-    require "./bd_connect.php";
-    require "./news.php";
+<?php 
+   require "./bd_connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,12 +7,12 @@
 
     <head>
         
-        <link rel="shortcut icon" href="/images/sitelogo.png" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+        <link rel="shortcut icon" href="/images/sitelogo.png" >
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" >
         <meta charset="UTF-8">
-        <meta name="author" content="Damodarane Jean-Baptiste" /> 
-        <meta name="date" content="2022-09-23" />
-        <meta name="keywords" content="Projet de Developpement web" />
+        <meta name="author" content="Damodarane Jean-Baptiste" > 
+        <meta name="date" content="2022-09-23" >
+        <meta name="keywords" content="Projet de Developpement web" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
@@ -22,7 +21,7 @@
         <!-- style lien cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <!-- style avec css -->
-        <link rel="stylesheet" href="<?php echo $link ?>"/>
+        <link rel="stylesheet" href="<?php echo $link ?>">
 
     </head>
 
@@ -45,8 +44,8 @@
             </nav>
 
             <div class="mesicones">
-                <div class="fas fa-search" id="search-btn"></div>
-                <a href="connect.php"><div class="fa fa-user" id="search-btn"></div></a>
+                <div class="fas fa-search" ></div>
+                <a href="connect.php"><div class="fa fa-user"></div></a>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 

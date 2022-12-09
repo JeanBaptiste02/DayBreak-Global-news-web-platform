@@ -7,7 +7,7 @@
         <main>
 
             <section>
-                <div class="section-content blog">
+                <div class="section-content">
                     <div class="title">
                         <h2>Politiques</h2>
                     </div>
@@ -34,7 +34,8 @@
                                 echo "<div class='card'> \n";
                                     echo "<div class='image-section'> \n";
                                         $urlPicture = urldecode($news['imageUrl']);
-                                        echo "<img src='$urlPicture' alt='image de la news' width='100' height='200'/> \n";
+                                        $urlPicture = str_replace(' ', '%20', $urlPicture);
+                                        echo "<img src='$urlPicture' alt='image de la news' width='100' height='200'> \n";
                                     echo "</div> \n";
                                     echo "<div class='article'> \n";
                                         $titre = $news['titre'];
@@ -45,9 +46,9 @@
                                     echo "</div> \n";
                                     echo "<div class='blog-view'> \n";
                                         $id = $news['id'];
-                                        echo "<form id='test' action='newsdetail.php' method='post'> \n";
-                                            echo "<input type='hidden' name='idNews' value='$id'/> \n";
-                                            echo "<input type='submit' value='Lire plus' /> \n";
+                                        echo "<form action='newsdetail.php' method='post'> \n";
+                                            echo "<input type='hidden' name='idNews' value='$id'> \n";
+                                            echo "<input type='submit' value='Lire plus' > \n";
                                         echo "</form> \n";
                                     echo "</div> \n";
                                     echo "<div class='posted-date'> \n";

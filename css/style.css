@@ -438,12 +438,13 @@ textarea{
     color:#000000;
 }
 
-.section-content .cards .card a{
+.section-content .cards .card input{
     text-decoration: none;
     display: inline-block;
     background-color: gold;
     padding: 8px 15px;
     margin-left: 20px;
+    cursor: pointer;
     color:black;
     margin-bottom: 20px;
 }
@@ -592,6 +593,19 @@ textarea{
     padding: 0 0 10px 0;
 }
 
+.cardo .content .infoSup .text .btnVoix{
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    background-color: #f99e00;
+    border: 2px solid #333333;
+    outline: none;
+    width: 60px;
+}
+
 .cardo .content h2{
     color: #0003ff;
     font-weight: bold;
@@ -642,24 +656,132 @@ textarea{
     }
 }
 
-.boxtrysection {
-    padding: 1%;
-    min-width: 20%;
-    border-radius: 20px;
-    display: inline;
-    text-align: center; 
+.section-content2{
+    width:85%;
+    margin:20px auto;
 }
 
-.boxtrysection h2 {
-    margin-top:100px;
-    margin-bottom:1px;
+.section-content2 .title{
+    width:60%;
+    text-align: center;
+    margin:auto;
 }
 
-.bowItems{
-    overflow-x: auto;
+.section-content2 .title h2{
+    font-size: 40px;
+    color:gold;
+    text-transform: uppercase;
+    font-family: Jazz LET, fantasy;
+    
+}
+
+.section-content2 .title p{
+    font-size: 18px;
+    color:#000000;
+    margin-top: 20px;
+}
+
+.section-content2 .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin:25px auto; 
+}
+
+.section-content2 .cards .card2{
+    width:100%;
+    background-color: #ece1ce;
+    position:relative;
+    display: none;
+}
+
+.section-content2 .cards .card2:nth-child(1) {
+    display: block;
+}
+
+.section-content2 .cards .card2:nth-child(2) {
+    display: block;
+}
+
+.section-content2 .cards .card2:nth-child(3) {
+    display: block;
+}
+
+.section-content2 .cards .card2 img{
+    width:100%;
+    margin: auto;
+    
+}
+
+.section-content2 .cards .card2 .article{
+    padding:15px 20px;
+    
+}
+
+.section-content2 .cards .card2 .article h4{
+    font-size: 24px;
+    color:#0003ff;
+}
+
+.section-content2 .cards .card2 .article p{
+    font-size: 16px;
+    margin: 10px 0px;  
+    color:#000000;
+}
+
+.section-content2 .cards .card2 input{
+    text-decoration: none;
+    display: inline-block;
+    background-color: gold;
+    padding: 8px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.section-content2 .cards .card2 .posted-date p{
+    font-weight: 600;
+    position: absolute;
+    top:0;
+    left:0;
+    display: inline-block;
+    background-color: gold;
+    padding: 6px 15px;
+    color:black
+}
+
+.btncontainer {
     display: flex;
-    padding-top: 10%;
-    padding-bottom:2%;
-    padding-left:2%;
-    padding-right:2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncontainer .btnLoad {
+    background-color: #1b1a1a;
+    width: 150px;
+    padding: 6px;
+    font-size: 15px;
+    transition: background-color .3s;
+    border: 1px solid gold;
+    color: gold;
+    cursor: pointer;
+}
+
+.btncontainer .btnLoad:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+
+@media screen and (max-width: 992px){
+    .section-content2 .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+
+@media screen and (max-width: 768px){
+    .section-content2 .cards {
+        grid-template-columns: 1fr;
+    }
 }

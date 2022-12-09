@@ -24,3 +24,4 @@ map.addLayer(layer);
 
 let marker = new L.Marker([49.04295, 2.08466]);
 marker.addTo(map);
+
